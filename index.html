@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>		
+		<title>Demo - Show password</title>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+		<link href="dependencies/screen.css" type="text/css" rel="stylesheet" />				
+	</head>
+	<body>
+	
+		<form action="">
+				<label>Password (default)</label>
+				<input id="pass1" type="password"  /><br />
+				<label>Password (another text)</label>
+				<input id="pass2" type="password" /><br />
+				<label>Password (reverse functional)</label>
+				<input id="pass3" type="password" /><br />
+		</form>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="jquery.showhidepass.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// <![CDATA[
+			$(document).ready(function(){			
+			$().ShowHidePass('#pass1');
+			$().ShowHidePass('#pass2','Show characters');
+			$().ShowHidePass('#pass3','Hide characters',true);	
+			});	
+			// ]]>
+		</script>
+		
+	</body>
+</html>
