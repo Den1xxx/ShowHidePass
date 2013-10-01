@@ -8,7 +8,7 @@
 	
 		<form action="">
 				<label>Password (default)</label>
-				<input id="pass1" type="password"  /><br />
+				<input id="pass1" type="password" /><br />
 				<label>Password (another text)</label>
 				<input id="pass2" type="password" /><br />
 				<label>Password (reverse functional)</label>
@@ -19,9 +19,12 @@
 		<script src="jquery.showhidepass.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			// <![CDATA[
-			$(document).ready(function(){			
+			$(document).ready(function(){
+			//default functional, add checkbox and label "Show" 
 			$().ShowHidePass('#pass1');
+			//another text, write "Show characters" instead "Show"
 			$().ShowHidePass('#pass2','Show characters');
+			//reverse functional 
 			$().ShowHidePass('#pass3','Hide characters',true);	
 			});	
 			// ]]>
