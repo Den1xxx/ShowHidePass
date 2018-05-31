@@ -28,4 +28,4 @@ Adds to the field of type "password" label "Show."
 
 	$().ShowHidePass('#pass3','Hide characters',true);	
 
-See this examples in index.html with yuor browser.
+See this examples in index.html with your browser.
